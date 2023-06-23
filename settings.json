@@ -1,0 +1,32 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "git.autofetch": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.stickyScroll.enabled": true,
+  "window.experimental.windowControlsOverlay.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  //vim settings
+  "vim.leader": "<space>", //set the <space> as the leader key
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.handleKeys": {
+    "<C-a>": false, // disable the default <C-a> mapping to use select all
+    "<C-f>": false // disable the default <C-f> mapping to use find
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      // press <space> + j to toggle terminal
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.togglePanel"]
+    }
+  ]
+}

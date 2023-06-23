@@ -1,0 +1,60 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+enter",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated"
+  },
+  {
+    // press ese to hide terminal
+    "key": "escape",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    // press ctrl + space to focus on terminal when terminal is shown
+    "key": "ctrl+down",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    //when press ctrl + right split editor to right when focus on editor and vim mode on "normal"
+    "key": "ctrl+right",
+    "command": "workbench.action.splitEditorRight",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    //when press ctrl + left split editor to right when focus on editor and vim mode on "normal"
+    "key": "ctrl+left",
+    "command": "workbench.action.splitEditorLeft",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    //when press alt + right switch editor to right when focus on editor and vim mode on "normal"
+    "key": "alt+right",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    //when press alt + right switch editor to right when focus on editor and vim mode on "normal"
+    "key": "alt+left",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    // ctrl + w to close editor
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  }
+]
