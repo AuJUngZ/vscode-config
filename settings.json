@@ -25,9 +25,14 @@
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      // press <space> + j to toggle terminal
+      // press <space> + j to toggle termina
       "before": ["<leader>", "j"],
       "commands": ["workbench.action.togglePanel"]
+    },
+    {
+      // <leader> + f to open search file
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"]
     }
   ],
   "editor.fontSize": 16,
