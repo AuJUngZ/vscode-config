@@ -74,5 +74,11 @@
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "filesExplorerFocus"
+  },
+  {
+    // ctrl + b to hide file explorer
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   }
 ]
