@@ -20,7 +20,8 @@
   "vim.hlsearch": true,
   "vim.handleKeys": {
     "<C-a>": false, // disable the default <C-a> mapping to use select all
-    "<C-f>": false // disable the default <C-f> mapping to use find
+    "<C-f>": false, // disable the default <C-f> mapping to use find
+    "<C-c>": false // disable the default <C-c> mapping to use copy
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -28,5 +29,10 @@
       "before": ["<leader>", "j"],
       "commands": ["workbench.action.togglePanel"]
     }
-  ]
+  ],
+  "editor.fontSize": 16,
+  "workbench.colorTheme": "Material Theme Darker",
+  "terminal.integrated.fontFamily": "Hack Nerd Font ",
+  "editor.lineNumbers": "relative",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true
 }
