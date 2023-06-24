@@ -62,5 +62,17 @@
     "key": "alt+enter",
     "command": "editor.action.quickFix",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    // escape + escape to change focus to tree fileExpolorer if focus on editor
+    "key": "escape escape",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    // escape to change focus to editor if focus on fileExplorer
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "filesExplorerFocus"
   }
 ]
