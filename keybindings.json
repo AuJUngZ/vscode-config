@@ -65,20 +65,20 @@
   },
   {
     // escape + escape to change focus to tree fileExpolorer if focus on editor
-    "key": "escape escape",
+    "key": "space f",
     "command": "workbench.files.action.focusFilesExplorer",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    // space + f + f to open serach file
+    "key": "space f f",
+    "command": "workbench.action.quickOpen",
+    "when": "!editorTextFocus"
   },
   {
     // escape to change focus to editor if focus on fileExplorer
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "filesExplorerFocus"
-  },
-  {
-    // ctrl + b to hide file explorer
-    "key": "ctrl+b",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   }
 ]
