@@ -71,8 +71,15 @@
   },
   {
     // space + f + f to open serach file
-    "key": "space f f",
-    "command": "workbench.action.quickOpen"
+    "key": "space s f",
+    "command": "workbench.action.quickOpen",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    // space j to open terminal
+    "key": "space j",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
     // escape to change focus to editor if focus on fileExplorer

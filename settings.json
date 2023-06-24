@@ -24,11 +24,6 @@
     "<C-c>": false // disable the default <C-c> mapping to use copy
   },
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      // press <space> + j to toggle termina
-      "before": ["<leader>", "j"],
-      "commands": ["workbench.action.togglePanel"]
-    }
   ],
   "editor.fontSize": 16,
   "workbench.colorTheme": "Material Theme Darker",
