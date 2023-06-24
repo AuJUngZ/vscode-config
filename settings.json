@@ -31,7 +31,7 @@
     },
     {
       // <leader> + f to open search file
-      "before": ["<leader>", "f"],
+      "before": ["<leader>", "f", "f"],
       "commands": ["workbench.action.quickOpen"]
     }
   ],
