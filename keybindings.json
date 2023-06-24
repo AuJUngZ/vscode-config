@@ -56,5 +56,11 @@
     "key": "ctrl+w",
     "command": "workbench.action.closeActiveEditor",
     "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    // ctrl + enter to show code action
+    "key": "alt+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   }
 ]
