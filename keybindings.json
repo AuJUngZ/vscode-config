@@ -86,5 +86,10 @@
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "filesExplorerFocus"
+  },
+  {
+    // ctrl + b to toggle side bar
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
   }
 ]
