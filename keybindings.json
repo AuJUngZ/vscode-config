@@ -91,5 +91,11 @@
     // ctrl + b to toggle side bar
     "key": "ctrl+b",
     "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    //to open command palette
+    "key": "space e",
+    "command": "workbench.action.showCommands",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   }
 ]
