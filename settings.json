@@ -1,5 +1,5 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "eq-material-theme-icons",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -19,15 +19,57 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.handleKeys": {
-    "<C-a>": false, // disable the default <C-a> mapping to use select all
-    "<C-f>": false, // disable the default <C-f> mapping to use find
-    "<C-c>": false // disable the default <C-c> mapping to use copy
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-v>": false
   },
-  "vim.normalModeKeyBindingsNonRecursive": [
-  ],
+  "vim.normalModeKeyBindingsNonRecursive": [],
   "editor.fontSize": 16,
-  "workbench.colorTheme": "Material Theme Darker",
   "terminal.integrated.fontFamily": "Hack Nerd Font ",
   "editor.lineNumbers": "relative",
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "workbench.colorCustomizations": {
+    "[Material Theme Darker]": {},
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "files.autoSave": "afterDelay",
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "editor.inlayHints.enabled": "off",
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "window.commandCenter": true,
+  "remote.SSH.remotePlatform": {
+    "167.71.212.122": "linux",
+    "ltc.cmonehealth.org": "linux",
+    "scholar": "linux"
+  },
+  "workbench.colorTheme": "Material Theme DeepForest High Contrast",
+  "githubPullRequests.pullBranch": "never",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdfxe",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    }
+  ]
 }
